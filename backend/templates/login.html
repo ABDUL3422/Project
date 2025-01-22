@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Diagano</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename="css/login.css")}}>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Diagano.Ai</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="form">
+            <h2>Log-in</h2>
+            <form method="GET" action="/getStarted">
+
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+
+                <div class="input">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+                </div>
+
+                <input type="submit" value="Click"/>
+                <p><a href="#">Forgot Password?</a></p>
+
+                <p>New user? <a href="/signup">Sign Up</a></p>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
